@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientID = '299a2d2ce86849dda9ba9ec06e5d07c5'; 
-const redirectUri = "http://localhost:3000/dashboard";
+const redirectUri = "https://vibes-vault.vercel.app/dashboard";
 const scopes = ["user-library-read"];
 
 export const loginEndpoint = `${authEndpoint}?response_type=code&client_id=${clientID}&redirect_uri=${redirectUri}`;
